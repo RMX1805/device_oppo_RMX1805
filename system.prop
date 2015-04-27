@@ -66,6 +66,10 @@ media.aac_51_output_enabled=true
 av.debug.disable.pers.cache=1
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
+# Graphics
+debug.sf.enable_gl_backpressure=1
+debug.cpurend.vsync=false
+
 #minimum duration for offload playback in secs
 audio.offload.min.duration.secs=30
 
@@ -267,5 +271,4 @@ ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 
 #
-debug.sf.enable_gl_backpressure=1
 media.stagefright.thumbnail.prefer_hw_codecs=true
