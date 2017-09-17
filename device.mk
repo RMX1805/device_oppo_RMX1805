@@ -112,6 +112,10 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.RMX1805
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
