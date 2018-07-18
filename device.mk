@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := RMX1805
 
@@ -13,6 +14,7 @@ TARGET_SCREEN_WIDTH := 720
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay-lineage
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
