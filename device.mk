@@ -124,6 +124,10 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+# TextClassifier
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.RMX1805
