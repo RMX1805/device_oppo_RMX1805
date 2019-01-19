@@ -119,6 +119,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.RMX1805
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
