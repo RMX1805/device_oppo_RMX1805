@@ -36,6 +36,12 @@ debug.enable.sglscale=1
 debug.gralloc.enable_fb_ubwc=1
 debug.sf.recomputecrop=0
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.dbg.ims_volte_enable=1
+
 #Disable Skip Validate
 sdm.debug.disable_skip_validate=1
 
