@@ -251,3 +251,4 @@ ro.location.osnlp.region.package=
 
 #
 debug.sf.enable_gl_backpressure=1
+media.stagefright.thumbnail.prefer_hw_codecs=true
