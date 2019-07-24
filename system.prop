@@ -250,3 +250,4 @@ ro.location.osnlp.package=com.google.android.gms
 ro.location.osnlp.region.package=
 
 #
+debug.sf.enable_gl_backpressure=1
