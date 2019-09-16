@@ -152,9 +152,11 @@ PRODUCT_PACKAGES += \
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
+    ims-ext-common_system
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+    ims-ext-common_system
 
 # Offline charger
 PRODUCT_PACKAGES += \
