@@ -49,6 +49,10 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
+# Treble
+BOARD_VNDK_RUNTIME_DISABLE := true
+BOARD_VNDK_VERSION := current
+
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
 
