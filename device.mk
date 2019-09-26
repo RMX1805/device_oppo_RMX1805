@@ -71,6 +71,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.RMX1831
+
 # Framework detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
