@@ -54,7 +54,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
 # Screen density
@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     fstab.qcom
+
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
 
 # QCOM
 PRODUCT_COPY_FILES += \
