@@ -100,7 +100,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     fstab.qcom \
-    init.oppo.rc
+    init.oppo.rc \
+    set_zram.sh
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
