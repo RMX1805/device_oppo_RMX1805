@@ -82,3 +82,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true \
     persist.device_config.runtime_native.usap_pool_size_max=5
+
+# charger
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.charger.enable_suspend=true
