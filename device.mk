@@ -48,6 +48,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1520
 TARGET_SCREEN_WIDTH := 720
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+   BluetoothQti
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
