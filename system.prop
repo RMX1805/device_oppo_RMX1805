@@ -249,6 +249,18 @@ vendor.camera.aux.packagelist=com.wingtech.factorycamera,com.oppo.engineermode,c
 ro.location.osnlp.package=com.google.android.gms
 ro.location.osnlp.region.package=
 
+# disable ipo for development
+sys.ipo.disable=1
+
+# Video Acceleration Enabled And HW debugging
+video.accelerate.hw=1
+debug.sf.hw=1
+debug.performance.tuning=1
+debug.egl.profiler=1 
+debug.egl.hw=1
+debug.composition.type=gpu 
+ro.surface_flinger.running_without_sync_framework=true
+
 #
 debug.sf.enable_gl_backpressure=1
 media.stagefright.thumbnail.prefer_hw_codecs=true
