@@ -129,5 +129,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndk_package
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/RMX1805/RMX1805-vendor.mk)
