@@ -55,6 +55,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # System-as-root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
+# Sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
