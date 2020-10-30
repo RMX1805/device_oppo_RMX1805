@@ -28,3 +28,6 @@ service face_hal /system/bin/true
 #    chown system system /proc/touchpanel/oppo_tp_direction
 #    chown 0660 /proc/touchpanel/oppo_tp_direction
 #    write /proc/touchpanel/oppo_tp_direction 1
+
+on post-fs
+    setprop oppo.camera.packname com.oppo.camera
