@@ -114,9 +114,6 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
 SELINUX_IGNORE_NEVERALLOWS := true
 
-# Telephony
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_VNDK_VERSION := current
