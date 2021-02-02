@@ -49,6 +49,9 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# System-as-root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
