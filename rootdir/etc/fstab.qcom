@@ -20,3 +20,6 @@
 /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.*.auto*     /storage/usbotg    vfat    nosuid,nodev    wait,voldmanaged=usbotg:auto
 /dev/block/bootdevice/by-name/log           /mnt/vendor/log         vfat    noatime,uid=0,gid=1000,umask=022,defaults           check,defaults
 /dev/block/bootdevice/by-name/opporeserve2      /mnt/vendor/opporeserve             ext4   nosuid,nodev,noatime,barrier=1,async_discard                           wait,check
+/dev/block/bootdevice/by-name/boot                      /boot                    emmc    defaults                                             defaults
+/dev/block/bootdevice/by-name/vendor                    /vendor                  ext4    ro,barrier=1                                         wait,recoveryonly
+/dev/block/bootdevice/by-name/recovery                  /recovery                emmc    defaults                                             defaults
