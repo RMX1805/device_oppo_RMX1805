@@ -62,5 +62,9 @@ BOARD_VNDK_VERSION := current
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 28
+PRODUCT_EXTRA_VNDK_VERSIONS := 28
+
 # Inherit from the proprietary version
 -include vendor/oppo/RMX1805/BoardConfigVendor.mk
