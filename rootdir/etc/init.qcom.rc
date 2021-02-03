@@ -3,3 +3,7 @@ on init
     mount none /system/etc/fstab.qcom /vendor/etc/fstab.qcom bind
     # Bind mount the config file with the one in  /vendor/etc/audio/
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
+
+on boot
+    # OTG
+    write /sys/class/power_supply/usb/otg_switch 1

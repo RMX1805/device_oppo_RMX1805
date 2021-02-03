@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Asserts
-TARGET_OTA_ASSERT_DEVICE := RMX1805
-
 # Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
@@ -48,9 +48,31 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1520
 TARGET_SCREEN_WIDTH := 720
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
+# Display
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.graphics.mapper@2.0-impl \
+    gralloc.default \
+    libdisplayconfig \
+    liboverlay \
+    libqdMetaData.system \
+    libtinyxml
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+
+# Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -89,6 +111,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/RMX1805/RMX1805-vendor.mk)
