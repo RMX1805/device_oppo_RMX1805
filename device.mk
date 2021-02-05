@@ -76,8 +76,10 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
+# ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+# endif
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
