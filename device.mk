@@ -101,6 +101,11 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.base@1.0
 
+# Binder
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder
+
 # Init
 PRODUCT_PACKAGES += \
     init.qcom.rc \
@@ -121,7 +126,8 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # QCOM
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
+    $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    $(LOCAL_PATH)/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
 # RCS
 PRODUCT_PACKAGES += \
