@@ -154,17 +154,13 @@ PRODUCT_PACKAGES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    telephony-ext
-    ims-ext-common_system
+    telephony-ext \
+    ims-ext-common_system \
+    ims-ext-common.xml
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext
+    telephony-ext \
     ims-ext-common_system
-
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
 
 # TextClassifier
 PRODUCT_PACKAGES += \
