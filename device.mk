@@ -89,6 +89,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# Trust
+PRODUCT_PACKAGES += \
+    lineage.trust@1.0-service
+
 # CNE
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
