@@ -101,7 +101,11 @@ persist.timed.enable=true
 
 #system prop for Bluetooth SOC type
 ro.bluetooth.library_name=libbluetooth_qti.so
-persist.vendor.btstack.enable.splita2dp=false
+persist.vendor.btstack.enable.splita2dp=true
+persist.bluetooth.a2dp_offload.disabled=false
+ro.bluetooth.a2dp_offload.supported=true
+vendor.audio.feature.a2dp_offload.enable=true
+persist.vendor.bt.a2dp.aac_whitelist=true
 
 # ifdef ODM_WT_EDIT
 # System property for cabl
