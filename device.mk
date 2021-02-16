@@ -6,7 +6,9 @@
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default
+    audio.a2dp.default \
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio@4.0-impl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
@@ -50,7 +52,11 @@ TARGET_SCREEN_WIDTH := 720
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-   BluetoothQti
+   BluetoothQti \
+   com.qualcomm.qti.bluetooth_audio@1.0 \
+   android.hardware.bluetooth.a2dp@1.0-impl \
+   android.hardware.bluetooth.a2dp@1.0-service \
+   vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
