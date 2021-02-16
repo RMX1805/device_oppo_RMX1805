@@ -20,6 +20,7 @@ TARGET_SCREEN_WIDTH := 720
 # Bluetooth
 PRODUCT_PACKAGES += \
    BluetoothQti \
+   libldacBT_dec \
    com.qualcomm.qti.bluetooth_audio@1.0 \
    android.hardware.bluetooth.a2dp@1.0-impl \
    android.hardware.bluetooth.a2dp@1.0-service \
