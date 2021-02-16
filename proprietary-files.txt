@@ -21,11 +21,11 @@
 -framework/vendor.qti.hardware.data.connection-V1.0-java.jar
 -framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
 -framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
--priv-app/CNEService/CNEService.apk
+#-priv-app/CNEService/CNEService.apk
 -priv-app/WfdService/WfdService.apk
 -priv-app/dpmserviceapp/dpmserviceapp.apk
 -priv-app/ims/ims.apk
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+#-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 bin/dpmd
 bin/iwpriv
 bin/wfdservice
@@ -47,7 +47,7 @@ etc/permissions/dpmapi.xml
 etc/permissions/embms.xml
 etc/permissions/izat.xt.srv.xml
 etc/permissions/privapp-permissions-com.qualcomm.location.xml
-etc/permissions/privapp-permissions-qti.xml
+#etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
@@ -67,7 +67,7 @@ lib/lib-imsvtextutils.so
 lib/lib-imsvtutils.so
 lib/libFileMux.so
 lib/libOmxMux.so
-lib/libaptX_encoder.so
+#lib/libaptX_encoder.so
 lib/libdiag_system.so
 lib/libdpmctmgr.so
 lib/libdpmfdmgr.so
@@ -122,7 +122,8 @@ lib64/lib-imsvtextutils.so
 lib64/lib-imsvtutils.so
 lib64/libFileMux.so
 lib64/libOmxMux.so
-lib64/libaptX_encoder.so
+product/lib64/libaptX_encoder.so
+product/lib64/libaptXHD_encoder.so
 lib64/libdiag_system.so
 lib64/libdpmctmgr.so
 lib64/libdpmfdmgr.so
