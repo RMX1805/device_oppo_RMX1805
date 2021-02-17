@@ -1,0 +1,30 @@
+on boot 
+ 
+   # FP
+service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.sh
+    class main
+    user root
+    oneshot
+
+service fps_hal /vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
+    class late_start
+    user system
+    group system input uhid
+
+service face_hal /system/bin/true
+    disabled
+
+    # Touchscreen/DT2W
+#    chown system system /proc/touchpanel/double_tap_enable
+#    chown 0660 /proc/touchpanel/double_tap_enable
+#    write /proc/touchpanel/double_tap_enable 1
+
+    # Disable edge limit control interface
+#    chown system system /proc/touchpanel/oppo_tp_limit_enable
+#    chown 0660 /proc/touchpanel/oppo_tp_limit_enable
+#    write /proc/touchpanel/oppo_tp_limit_enable 0
+
+    # Enable oppo touchpanel direction
+#    chown system system /proc/touchpanel/oppo_tp_direction
+#    chown 0660 /proc/touchpanel/oppo_tp_direction
+#    write /proc/touchpanel/oppo_tp_direction 1

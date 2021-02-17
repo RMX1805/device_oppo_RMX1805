@@ -99,7 +99,8 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    fstab.qcom
+    fstab.qcom \
+    init.oppo.rc
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
