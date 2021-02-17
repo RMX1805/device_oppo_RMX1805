@@ -1,4 +1,4 @@
 hidl_package_root {
     name: "vendor.oppo",
-    path: "device/realme/RMX1831/interfaces/vendor",
+    path: "device/oppo/RMX1805/interfaces/vendor",
 }
