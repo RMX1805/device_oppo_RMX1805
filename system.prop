@@ -272,3 +272,6 @@ ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 
 #
 media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# SurfaceFlinger brightness tweak
+ro.sf.force_light_brightness=1
