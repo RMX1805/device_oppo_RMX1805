@@ -127,7 +127,6 @@ product/lib64/libaptXHD_encoder.so
 lib64/libdiag_system.so
 lib64/libdpmctmgr.so
 lib64/libdpmfdmgr.so
-lib64/libdpmframework.so
 lib64/libdpmtcm.so
 lib64/libfm-hci.so
 lib64/libimscamera_jni.so
@@ -156,3 +155,4 @@ lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
 lib64/vendor.qti.hardware.scve.panorama@1.0.so
 lib64/vendor.qti.imsrtpservice@1.0.so
+system_ext/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
