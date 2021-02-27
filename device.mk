@@ -8,7 +8,9 @@
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     android.hardware.audio.effect@4.0-impl \
-    android.hardware.audio@4.0-impl
+    android.hardware.audio@4.0-impl \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
