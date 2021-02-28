@@ -165,13 +165,10 @@ PRODUCT_PACKAGES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    telephony-ext \
-    ims-ext-common_system \
-    ims-ext-common.xml
+    telephony-ext
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext \
-    ims-ext-common_system
+    telephony-ext
 
 # TextClassifier
 PRODUCT_PACKAGES += \
