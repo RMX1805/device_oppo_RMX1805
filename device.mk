@@ -198,5 +198,9 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     vndk_package
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 28
+PRODUCT_EXTRA_VNDK_VERSIONS := 28
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/RMX1805/RMX1805-vendor.mk)
