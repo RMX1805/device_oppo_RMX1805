@@ -143,7 +143,6 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
--include $(LOCAL_PATH)/vendor_prop.mk
 
 # QCOM
 PRODUCT_COPY_FILES += \
