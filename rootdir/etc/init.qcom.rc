@@ -35,5 +35,13 @@ service set_zram /vendor/bin/sh /system/etc/init/set_zram.sh
     group system
     oneshot
 
+service ktweak /vendor/bin/sh /system/etc/init/ktweak.sh
+    class late_start
+    disabled
+    user root
+    group system
+    oneshot
+
 on property:sys.boot_completed=1
     start set_zram
+    start ktweak
