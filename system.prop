@@ -273,3 +273,7 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # SurfaceFlinger brightness tweak
 ro.sf.force_light_brightness=1
+
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
