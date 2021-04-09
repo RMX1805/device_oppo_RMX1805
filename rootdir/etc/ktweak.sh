@@ -1,5 +1,20 @@
 #! /vendor/bin/sh
 
+    # Touchscreen/DT2W
+chown system system /proc/touchpanel/double_tap_enable
+chown 0660 /proc/touchpanel/double_tap_enable
+write /proc/touchpanel/double_tap_enable 1
+
+    # Disable edge limit control interface
+chown system system /proc/touchpanel/oppo_tp_limit_enable
+chown 0660 /proc/touchpanel/oppo_tp_limit_enable
+write /proc/touchpanel/oppo_tp_limit_enable 0
+
+    # Enable oppo touchpanel direction
+chown system system /proc/touchpanel/oppo_tp_direction
+chown 0660 /proc/touchpanel/oppo_tp_direction
+write /proc/touchpanel/oppo_tp_direction 1
+
 # Limit max perf event processing time to this much CPU usage
 write /proc/sys/kernel/perf_cpu_time_max_percent 5
 
