@@ -122,5 +122,9 @@ BOARD_VNDK_VERSION := current
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_msm8953
+TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
+
 # Inherit from the proprietary version
 -include vendor/oppo/RMX1805/BoardConfigVendor.mk
