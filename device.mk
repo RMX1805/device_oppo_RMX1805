@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
@@ -206,7 +210,3 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 28
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/RMX1805/RMX1805-vendor.mk)
-
-# Prebuilt Packages
-PRODUCT_PACKAGES += \
-    GCamGo
