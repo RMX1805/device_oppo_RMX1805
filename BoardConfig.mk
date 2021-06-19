@@ -99,7 +99,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
--include $(LOCAL_PATH)/vendor_prop.mk
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
