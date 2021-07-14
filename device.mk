@@ -65,10 +65,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 # endif
 
-# Screen density
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
-
 # Trust
 PRODUCT_PACKAGES += \
     lineage.trust@1.0-service
@@ -169,6 +165,10 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
+
+# Screen density
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Telephony
 PRODUCT_PACKAGES += \
