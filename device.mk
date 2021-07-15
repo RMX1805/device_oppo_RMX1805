@@ -183,10 +183,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.RMX1805
-
 # Wifi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_SYSTEM)/etc/WCNSS_qcom_cfg.ini \
