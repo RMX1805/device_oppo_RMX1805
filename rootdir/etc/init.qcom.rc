@@ -11,7 +11,7 @@ on post-fs
     mount none /system/etc/WCNSS_qcom_cfg.ini /vendor/etc/wifi/WCNSS_qcom_cfg.ini bind
     mount none /system/etc/p2p_supplicant_overlay.conf /vendor/etc/wifi/p2p_supplicant_overlay.conf bind
     mount none /system/etc/wpa_supplicant_overlay.conf /vendor/etc/wifi/wpa_supplicant_overlay.conf bind
-    mount none /system/overlay/BluetoothResCommon.apk /vendor/overlay/BluetoothResCommon.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/BluetoothResCommon.apk bind
 
 on boot
     # OTG

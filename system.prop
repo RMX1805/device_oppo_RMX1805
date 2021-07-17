@@ -108,6 +108,8 @@ bluetooth.hfp.client=1
 qcom.bluetooth.soc=smd 
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
+persist.vendor.btstack.enable.splita2dp=true
 
 # ifdef ODM_WT_EDIT
 # System property for cabl

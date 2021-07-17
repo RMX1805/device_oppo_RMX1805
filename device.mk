@@ -7,10 +7,7 @@
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    android.hardware.audio.effect@4.0-impl \
-    android.hardware.audio@4.0-impl \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl
+    tinymix
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
@@ -21,11 +18,11 @@ TARGET_SCREEN_WIDTH := 720
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libldacBT_dec \
-    BluetoothResCommon
+    libldacBT_dec
 
 # Bluetooth 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/placeholder:system/etc/placeholder \
     $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
 # Camera
