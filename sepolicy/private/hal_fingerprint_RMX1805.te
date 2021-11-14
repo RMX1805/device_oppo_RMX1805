@@ -1,0 +1,5 @@
+type hal_fingerprint_RMX1805, domain;
+hal_client_domain(hal_fingerprint_RMX1805, hal_fingerprint)
+hal_server_domain(hal_fingerprint_RMX1805, hal_fingerprint)
+type hal_fingerprint_RMX1805_exec, system_file_type, exec_type, file_type;
+init_daemon_domain(hal_fingerprint_RMX1805)
