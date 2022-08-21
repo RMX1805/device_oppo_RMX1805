@@ -1,5 +1,5 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1805.mk
+    $(LOCAL_DIR)/carbon_RMX1805.mk
 
 COMMON_LUNCH_CHOICES := \
     carbon_RMX1805-user \
