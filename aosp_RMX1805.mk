@@ -3,7 +3,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from RMX1805 device
 $(call inherit-product, device/oppo/RMX1805/device.mk)
@@ -14,7 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 PRODUCT_BRAND := oppo
 PRODUCT_DEVICE := RMX1805
 PRODUCT_MANUFACTURER := oppo
-PRODUCT_NAME := carbon_RMX1805
+PRODUCT_NAME := aosp_RMX1805
 PRODUCT_MODEL := realme 2
 
 # PRODUCT_GMS_CLIENTID_BASE := android-oppo
@@ -26,3 +26,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #TARGET_GAPPS_ARCH := ARM64
 TARGET_BOOT_ANIMATION_RES := 720
+
+CUSTOM_BUILD_TYPE := OFFICIAL
+DEVICE_MAINTAINER := abhishekhembrom08 & warrior
