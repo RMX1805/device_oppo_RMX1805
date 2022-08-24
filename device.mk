@@ -194,9 +194,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
