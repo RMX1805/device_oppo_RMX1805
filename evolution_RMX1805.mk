@@ -30,6 +30,4 @@ TARGET_BOOT_ANIMATION_RES := 720
 CUSTOM_BUILD_TYPE := OFFICIAL
 DEVICE_MAINTAINER := abhishekhembrom08
 
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUBUILD_FINGERPRINT := "google/redfin/redfin:12/SQ1A.211205.008/7888514:user/release-keys"
 
