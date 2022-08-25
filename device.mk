@@ -49,7 +49,7 @@ PRODUCT_PACKAGES += \
     gralloc.default \
     libdisplayconfig \
     liboverlay \
-    libqdMetaData.system \
+    libqdMetaData \
     libtinyxml
 
 # Doze
