@@ -16,7 +16,7 @@
 
 cc_library_static {
     name: "libinit_RMX1805",
-    recovery_available: false,
+    recovery_available: true,
     srcs: ["init_RMX1805.cpp"],
     include_dirs: [
         "system/libbase/include",
