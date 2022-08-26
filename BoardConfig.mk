@@ -135,6 +135,7 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
 
-l
+
+
 # Inherit from the proprietary version
 -include vendor/oppo/RMX1805/BoardConfigVendor.mk
