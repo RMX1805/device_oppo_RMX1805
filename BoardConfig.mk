@@ -136,8 +136,8 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Vendor init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit
-TARGET_RECOVERY_DEVICE_MODULES := libinit
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_RMX1805
+TARGET_RECOVERY_DEVICE_MODULES := libinit_RMX1805
 
 # Inherit from the proprietary version
 -include vendor/oppo/RMX1805/BoardConfigVendor.mk
