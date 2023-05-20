@@ -18,7 +18,16 @@ TARGET_SCREEN_WIDTH := 720
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libldacBT_dec
+    libldacBT_dec \
+    android.hardware.bluetooth@1.1.vendor \
+    android.hardware.bluetooth.audio@2.0-impl \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    audio.bluetooth.default \
+    libbtconfigstore \
+    libbthost_if \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Bluetooth 
 PRODUCT_COPY_FILES += \
@@ -40,12 +49,22 @@ PRODUCT_PACKAGES += \
     gralloc.default \
     libdisplayconfig \
     liboverlay \
-    libqdMetaData.system \
+    libqdMetaData \
     libtinyxml
 
 # Doze
 PRODUCT_PACKAGES += \
     RealmeParts
+    
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.3.vendor
+    
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1.vendor
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -113,10 +132,10 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.0 \
+    android.system.net.netd@1.1 \
     libandroid_net \
     netutils-wrapper-1.0
-
+     
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
@@ -143,11 +162,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
-# RIl
+# RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.2 \
-    android.hardware.radio.config@1.0 \
-    android.hardware.secure_element@1.0
+    android.hardware.radio@1.5 \
+    android.hardware.radio.config@1.2 \
+    android.hardware.secure_element@1.2 \
+    android.hardware.radio.deprecated@1.0
 
 PRODUCT_PACKAGES += \
     librmnetctl \
